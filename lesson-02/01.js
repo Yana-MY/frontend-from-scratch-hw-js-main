@@ -12,13 +12,12 @@ const isAdmin = false
 const isVerifiedUser = true
 const hasSpecialPermission = true
 const hasTemporaryPass = false
-let isAccess = false
+let isAccess = false;
 
 if (isAdmin === true || isVerifiedUser === true) {
     if (hasSpecialPermission === true || hasTemporaryPass === true) {
         isAccess = true;
-    }
-    // alert("Acces Granted")
+    } else isAccess = false;
     // let message = (isAccess) ? "Access granted" : "Access denied";
 }
 
