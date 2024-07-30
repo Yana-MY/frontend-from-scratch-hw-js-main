@@ -7,8 +7,8 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-let dice1; // your code
-let dice2; // your code
+let dice1=1; // your code
+let dice2=1; // your code
 let isWinningDouble = false // your code
 let randomNumber;
 
@@ -50,7 +50,7 @@ switch (randomNumberDice2) {
 dice1 = randomNumberDice1;
 dice2 = randomNumberDice2;
 
-if (dice1 >= 3 || dice2 >=3) {
+if (dice1 >= 3 && dice2 >= 3) {
   if (dice1 === dice2) {
     isWinningDouble = true;
   } else isWinningDouble = false;
