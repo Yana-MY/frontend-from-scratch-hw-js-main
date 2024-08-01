@@ -18,7 +18,11 @@ if (isAdmin === true || isVerifiedUser === true) {
     if (hasSpecialPermission === true || hasTemporaryPass === true) {
         isAccess = true;
     } else isAccess = false;
-    // let message = (isAccess) ? "Access granted" : "Access denied";
+    // Другой вариант:
+// let isAccess = ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass))
+//  console.log(isAccess)
+
+
 }
 
 
