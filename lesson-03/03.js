@@ -2,13 +2,26 @@
 
 function findLargest(a,b,c) {
     if (a>b && a>c) {
-        return a   
+        return a
     } if (b>a && b>c) {
         return b
-    }if (c>a && c>b) 
-    return c
+    } if (c>a && c>b) {
+        return c
     } else {
         return undefined
     }
+}
 
-console.log(findLargest(10,5,4));
+
+
+    // if (a>b && a>c) {
+    //     return a   
+    // } if (b>a && b>c) {
+    //     return b
+    // }if (c>a && c>b) 
+    // return c
+    // } else {
+    //     return undefined
+    // }
+
+console.log(findLargest(10,10,10));
