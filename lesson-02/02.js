@@ -17,36 +17,7 @@ const randomNumberDice2 = Math.floor(Math.random()*7);
 
 
 
-// switch (randomNumberDice1) {
-//   case 0: randomNumber = 1
-//   break;
-//   case 1: randomNumber = 2
-//   break;
-//   case 2: randomNumber = 3
-//   break;
-//   case 3: randomNumber = 4
-//   break;
-//   case 4: randomNumber = 5
-//   break;
-//   case 5: randomNumber = 6
-//   break;
-// }
-
-
-// switch (randomNumberDice2) {
-//   case 0: randomNumber = 1
-//   break;
-//   case 1: randomNumber = 2
-//   break;
-//   case 2: randomNumber = 3
-//   break;
-//   case 3: randomNumber = 4
-//   break;
-//   case 4: randomNumber = 5
-//   break;
-//   case 5: randomNumber = 6
-//   break;
-// }
+  
 dice1 = randomNumberDice1;
 dice2 = randomNumberDice2;
 randomNumberDice1 > 0;
