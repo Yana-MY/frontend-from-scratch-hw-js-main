@@ -1,6 +1,6 @@
-let y = 10
-if (true) {
-  let y = 100
-  console.log(y)
+let temperature = 10
+function adjustTemperature() {
+  temperature = 15
 }
-console.log(y)
+adjustTemperature()
+console.log(temperature)
