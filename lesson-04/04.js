@@ -23,4 +23,6 @@ function doubleEachCharacter(str) {
 }
 
   // Пример использования
-  console.log(doubleEachCharacter('hello')); // Выведет 'hheelllloo'
+  const input = 'hello'; // Исходная строка
+  const result = doubleEachCharacter(input); // Получаем результат выполнения функции
+  console.log(result); // Выведет 'hheelllloo'
