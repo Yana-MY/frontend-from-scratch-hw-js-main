@@ -15,7 +15,7 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-
+let array = [];
 function findUniqueElements(array) {
     let newArray = [];
 
@@ -26,4 +26,4 @@ function findUniqueElements(array) {
     }
     return newArray;
 }
-console.log(findUniqueElements());
+console.log(findUniqueElements(array));
