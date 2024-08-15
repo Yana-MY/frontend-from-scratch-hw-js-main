@@ -15,14 +15,11 @@
 
 
 function doubleEachCharacter(str) {
-    let doubledStr = ''; // Инициализируем пустую строку для результата
-    for (let i = 0; i < str.length; i++) { // Проходим по каждому символу строки
-      doubledStr += str[i] + str[i]; // Удваиваем текущий символ и добавляем его к результату
+    let input = '';
+    for (let i = 0; i < str.length; i++) {
+        input += str[i] + str[i]; 
     }
-    return doubledStr; // Возвращаем строку с удвоенными символами
+    return input; 
 }
 
-  // Пример использования
-  const input = 'hello'; // Исходная строка
-  const result = doubleEachCharacter(input); // Получаем результат выполнения функции
-  console.log(result); // Выведет 'hheelllloo'
+  console.log(doubleEachCharacter('123helo')); // Выведет 'hheelllloo'
