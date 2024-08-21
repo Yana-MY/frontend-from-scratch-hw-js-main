@@ -22,4 +22,4 @@ function doubleEachCharacter(str) {
     return input; 
 }
 
-  console.log(doubleEachCharacter('123helo')); // Выведет 'hheelllloo'
+console.log(doubleEachCharacter('123helo')); 
