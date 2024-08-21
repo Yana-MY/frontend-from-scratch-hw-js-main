@@ -54,26 +54,27 @@ function updateGallery(gallery, artworkTitle, newValue) {
   }
 }
 
-// // Пример использования функции
-// const gallery = {
-//   'Mona Lisa': 'Leonardo da Vinci',
-//   'Starry Night': 'Vincent van Gogh',
-//   'The Scream': 'Edvard Munch'
-// };
+// // // Пример использования функции
+// // const gallery = {
+// //   'Mona Lisa': 'Leonardo da Vinci',
+// //   'Starry Night': 'Vincent van Gogh',
+// //   'The Scream': 'Edvard Munch'
+// // };
 
-// Обновляем произведение "Mona Lisa"
-updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
-// Добавляем новое произведение "The Persistence of Memory"
+// // Обновляем произведение "Mona Lisa"
+// updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
+// // Добавляем новое произведение "The Persistence of Memory"
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
 
-// Выводим обновленную галерею в консоль
+// // Выводим обновленную галерею в консоль
 console.log(gallery);
-// Ожидаемый вывод:
-// javascript
-// Копировать
-// {
-// 'Mona Lisa': 'Leonardo da Vinci, 1503-1506',
-// 'Starry Night': 'Vincent van Gogh',
-// 'The Scream': 'Edvard Munch',
-// 'The Persistence of Memory': 'Salvador Dali'
-// }
+// // Ожидаемый вывод:
+// // javascript
+// // Копировать
+// // {
+// // 'Mona Lisa': 'Leonardo da Vinci, 1503-1506',
+// // 'Starry Night': 'Vincent van Gogh',
+// // 'The Scream': 'Edvard Munch',
+// // 'The Persistence of Memory': 'Salvador Dali'
+// // }
