@@ -37,38 +37,36 @@ const gallery = {
 
 function updateGallery(gallery, artworkTitle, newValue) {
   let found = false;
-
-  // Проходимся по объекту с помощью цикла for...in
-  for (let title in gallery) {
-      if (title === artworkTitle) {
-          // Если найдено произведение, обновляем его значение
-          gallery[artworkTitle] = newValue;
-          found = true;
-          break;
-      }
-  }
-
-  // Если произведение не найдено, добавляем его в галерею
-  if (!found) {
+  for (const title in gallery) {
+    if (title === artworkTitle) {
       gallery[artworkTitle] = newValue;
+      found = true;
+      break;
+    }
+  }
+  if (!found) {
+    gallery[artworkTitle] = newValue;
   }
 }
 
-// // // Пример использования функции
-// // const gallery = {
-// //   'Mona Lisa': 'Leonardo da Vinci',
-// //   'Starry Night': 'Vincent van Gogh',
-// //   'The Scream': 'Edvard Munch'
-// // };
+// function updateGallery(gallery, artworkTitle, newValue) {
+//   let found = false;
+//   for (let title in gallery) {
+//       if (title === artworkTitle) {
+//           gallery[artworkTitle] = newValue;
+//           found = true;
+//           break;
+//       }
+//   }
+//   if (!found) {
+//       gallery[artworkTitle] = newValue;
+//   }
+// // }
+// updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+// updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
 
-// // Обновляем произведение "Mona Lisa"
-// updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
-// // Добавляем новое произведение "The Persistence of Memory"
-updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
-updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
-
-// // Выводим обновленную галерею в консоль
-console.log(gallery);
+// // // Выводим обновленную галерею в консоль
+// console.log(gallery);
 // // Ожидаемый вывод:
 // // javascript
 // // Копировать
