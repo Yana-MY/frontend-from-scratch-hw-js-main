@@ -49,30 +49,8 @@ function updateGallery(gallery, artworkTitle, newValue) {
   }
 }
 
-// function updateGallery(gallery, artworkTitle, newValue) {
-//   let found = false;
-//   for (let title in gallery) {
-//       if (title === artworkTitle) {
-//           gallery[artworkTitle] = newValue;
-//           found = true;
-//           break;
-//       }
-//   }
-//   if (!found) {
-//       gallery[artworkTitle] = newValue;
-//   }
-// // }
-// updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
-// updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
 
-// // // Выводим обновленную галерею в консоль
-// console.log(gallery);
-// // Ожидаемый вывод:
-// // javascript
-// // Копировать
-// // {
-// // 'Mona Lisa': 'Leonardo da Vinci, 1503-1506',
-// // 'Starry Night': 'Vincent van Gogh',
-// // 'The Scream': 'Edvard Munch',
-// // 'The Persistence of Memory': 'Salvador Dali'
-// // }
+
+console.log(gallery);
