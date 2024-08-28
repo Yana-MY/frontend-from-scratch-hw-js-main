@@ -3,7 +3,7 @@
 Изучите файл index.html. В этом задании надо будет работать с секцией "Урок 6". Разметка уже написано - нужно добавить только js-код.
 
 Задание:
-- Добавьте функциональность кнопкам "prev" и "next", чтобы при их нажатии изображение в теге `<img>` менялось на предыдущее или следующее
+- Добавьте функциональность кнопкам "p rev" и "next", чтобы при их нажатии изображение в теге `<img>` менялось на предыдущее или следующее
 - Обеспечьте циклическое переключение изображений: после последнего изображения следует первое, и наоборот.
 
 Адреса изображений находятся в массиве WEB_TECH_IMAGE
@@ -17,3 +17,30 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/c8a1f4a6-1337-4899-bdfd-a8c9c7bb806a_css-magic-logo.jpg',
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
+
+let currentImageIndex = 0;
+
+// Элементы DOM
+const imageElement = document.getElementById("web-tech-image");
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+
+// Функция обновления изображения
+function updateImage() {
+  imageElement.src = WEB_TECH_IMAGES[currentImageIndex];
+}
+
+// Обработчик нажатия кнопки "prev"
+prevButton.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length;
+  updateImage();
+});
+
+// Обработчик нажатия кнопки "next"
+nextButton.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex + 1) % WEB_TECH_IMAGES.length;
+  updateImage();
+});
+
+// Первоначальная установка изображения
+updateImage();
