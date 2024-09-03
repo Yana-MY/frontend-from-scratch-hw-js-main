@@ -3,12 +3,28 @@
  * Если строка является числом, функция должна возвращать true, в противном случае - false.
  */
 
-function isNumeric(str) {
-  // your code
-}
+// function isNumeric(str) {
+//   // your code
+// }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
 // console.log(isNumeric("abc")) // Ожидаемый результат: false
 // console.log(isNumeric(" ")) // Ожидаемый результат: false
+
+
+function isNumeric(str) {
+  // Удаляем пробелы по краям строки
+  
+  
+  // Проверяем, является ли строка числом
+  return !isNaN(str) && str !== ' ';
+}
+
+// Примеры использования
+console.log(isNumeric("123"));     // Ожидаемый результат: true
+console.log(isNumeric("12.3"));    // Ожидаемый результат: true
+console.log(isNumeric("123abc"));   // Ожидаемый результат: false
+console.log(isNumeric("abc"));      // Ожидаемый результат: false
+console.log(isNumeric(" "));        // Ожидаемый результат: false
