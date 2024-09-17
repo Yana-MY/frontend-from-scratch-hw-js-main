@@ -31,13 +31,31 @@ const countdownDisplay = document.getElementById('countdown')
 
 let isTimerStarted = false
 let timerId
+let countdownInterval;
 
 startButton.addEventListener('click', () => {
-  let counter = 3
-
-  // your code
+  if (countdownInterval) {
+    return
+  }
+  let counter = 3;
+  countdownDisplay.textContent = counter;
+  countdownInterval = setInterval(() => {
+    counter--
+    if (counter>=0) {
+      countdownDisplay.textContent = counter;
+    }
+    if (counter === 0) {
+      clearInterval(countdownInterval);
+      countdownDisplay.textContent = '🚀'
+      countdownInterval = null;
+    }
+  }, 1000);
 })
 
 cancelButton.addEventListener('click', () => {
-  // your code
+  if (countdownInterval) {
+    clearInterval(countdownInterval);
+    countdownDisplay.textContent = 'Отменено';
+    countdownInterval = null;
+  }
 })
